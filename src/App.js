@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Card from './components/Card/Card';
 import dataFromFile from './helpers/data';
 
 function App() {
@@ -25,7 +26,9 @@ function App() {
           <h2 className="text-center">Team </h2>
           <p className="text-center">Clarusway Company Employee Details</p>
         </div>
-        <div className="row people"></div>
+        <div className="row people">
+          <Card />
+        </div>
       </div>
     </div>
   );

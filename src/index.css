@@ -77,13 +77,13 @@
   color: #a2a8ae;
 }
 
-.team-boxed .social a {
+.team-boxed .social p {
   color: inherit;
   margin: 0 10px;
   display: inline-block;
   opacity: 0.7;
 }
 
-.team-boxed .social a:hover {
+.team-boxed .social p:hover {
   opacity: 1;
 }
