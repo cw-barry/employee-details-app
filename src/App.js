@@ -21,7 +21,7 @@ function App() {
       <div className="container">
         <div className="intro">
           <h2 className="text-center">Hello Team</h2>
-          <p className="text-center">Employee Details</p>
+          <p className="text-center">Employee Details - {index + 1}</p>
         </div>
         <div className="row justify-content-md-center people mb-0">
           <Card {...data[index]} />
@@ -30,7 +30,7 @@ function App() {
           <button onClick={handlePrev} className="m-2">
             <i class="fa-solid fa-arrow-left"></i>
           </button>
-          <span>{index}</span>
+
           <button onClick={handleNext} className="m-2">
             <i class="fa-solid fa-arrow-right"></i>
           </button>
