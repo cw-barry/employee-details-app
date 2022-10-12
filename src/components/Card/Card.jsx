@@ -1,22 +1,23 @@
 import React from 'react';
 
 const Card = (props) => {
+  const { name, age, image, email } = props;
   return (
-    <div className="col-md-6 col-lg-4 item">
+    <div className="col-md-6 col-lg-5 item">
       <div className="box">
-        <img className="rounded-circle" src="assets/img/1.jpg" alt="" />
-        <h3 className="name">Ben Johnson</h3>
-        <p className="title">Musician</p>
-        <p className="description"></p>
+        <img className="rounded-circle" src={image} alt={name} />
+        <h3 className="name">{name}</h3>
+        <p className="title">{email}</p>
+        <p className="description">{age} years</p>
         <div className="social">
           <p>
-            <i class="fa fa-facebook-official"></i>
+            <i class="fa-brands fa-facebook"></i>
           </p>
           <p>
-            <i class="fa fa-twitter"></i>
+            <i class="fa-brands fa-twitter"></i>
           </p>
           <p>
-            <i class="fa fa-instagram"></i>
+            <i class="fa-brands fa-instagram"></i>
           </p>
         </div>
       </div>
